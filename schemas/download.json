@@ -1,0 +1,36 @@
+{
+  "description": "Schema for download event",
+  "self": {
+    "vendor": "pexels",
+    "name": "download_event",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "content_type": {
+      "description": "",
+      "type": "string"
+    },
+    "dimension": {
+      "description": "",
+      "type": "string"
+    },
+    "location": {
+      "description": "",
+      "type": "string"
+    },
+    "size": {
+      "description": "",
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["name", "id", "content_type", "location", "dimension"]
+}

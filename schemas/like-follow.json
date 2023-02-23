@@ -1,0 +1,25 @@
+{
+    "description": "Schema for like and follow events",
+    "self": {
+      "vendor": "pexels",
+      "name": "like-follow_event",
+      "format": "jsonschema",
+      "version": "1-0-0"
+    },
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "state": {
+        "description": "",
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": ["name", "id", "state"]
+  }
+  

@@ -1,0 +1,25 @@
+{
+    "description": "Schema for collection, profile and meetup events",
+    "self": {
+      "vendor": "pexels",
+      "name": "collectio-profile-meetup_event",
+      "format": "jsonschema",
+      "version": "1-0-0"
+    },
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "action": {
+        "description": "",
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": ["name", "id", "action"]
+  }
+  

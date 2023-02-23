@@ -1,0 +1,40 @@
+{
+  "description": "Schema for upload event",
+  "self": {
+    "vendor": "pexels",
+    "name": "upload_event",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "type": "string"
+    },
+    "content_type": {
+      "description": "",
+      "type": "string"
+    },
+    "tags": {
+      "description": "",
+      "type": ["boolean", "null"]
+    },
+    "challenges": {
+      "description": "",
+      "type": ["boolean", "null"]
+    },
+    "challenges_cta": {
+      "description": "",
+      "type": ["boolean", "null"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["name", "id", "content_type"]
+}

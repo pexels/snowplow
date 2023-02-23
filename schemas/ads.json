@@ -1,0 +1,34 @@
+{
+    "description": "Schema for a ads event",
+    "self": {
+      "vendor": "pexels",
+      "name": "ads_event",
+      "format": "jsonschema",
+      "version": "1-0-0"
+    },
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "placement_type": {
+        "description": "",
+        "type": "string"
+      },
+      "placement_postion": {
+        "description": "",
+        "type": "string"
+      },
+      "content_type": {
+        "description": "",
+        "type": "string"
+      },
+      "click_element": {
+        "description": "",
+        "type": ["string", "null"]
+      }
+    },
+    "additionalProperties": false,
+    "required": ["name", "placement_type", "placement_postion", "content_type"]
+  }
+  

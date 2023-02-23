@@ -1,0 +1,21 @@
+{
+    "description": "Schema for search event",
+    "self": {
+      "vendor": "pexels",
+      "name": "search_event",
+      "format": "jsonschema",
+      "version": "1-0-0"
+    },
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "query": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": ["name", "query"]
+  }
+  
